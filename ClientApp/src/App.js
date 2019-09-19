@@ -88,18 +88,18 @@ export default class App extends Component {
         }
 
         return (
-            <div>
+            <div>         
                 <div>
                     <span>
                         Enter Url :
                     </span>
-                    <input type="text" onChange={this.updateUrl} />
+                    <input type="text" placeholder="e.g. www.infotrack.com.au" onChange={this.updateUrl} style={{ width: 500 }} />
                 </div>
                 <div>
                     <span>
                         Enter Keyword :
                     </span>
-                    <input type="text" onChange={this.updateKeyword} />
+                    <input type="text" placeholder="e.g. Infotrack" onChange={this.updateKeyword} style={{ width: 500 }} />
                 </div>
                 <div>
                     <button id="btnSearch" onClick={this.search}>
@@ -109,7 +109,7 @@ export default class App extends Component {
                 <div>
                     Index positions found on Google Search : {contents}
                 </div>
-            </div>
+             </div>
         );
     }
 }
